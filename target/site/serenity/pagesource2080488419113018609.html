@@ -1,0 +1,296 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="es"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;script type="module" src="/@vite/client"&gt;&lt;/script&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;title&gt;HireUp - Oficial&lt;/title&gt;&lt;base href="/"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br/>
+  &lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;<br/>
+  &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;<br/>
+  &lt;link rel="stylesheet" href="styles.css"&gt;<br/>
+  &lt;style&gt;@import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined";<br/>
+<br/>
+<br/>
+<br/>
+header[_ngcontent-ng-c3962716645] {<br/>
+  background-color: #ffffff;<br/>
+  padding: 10px 0px;<br/>
+  display: flex;<br/>
+  justify-content: space-between;<br/>
+  align-items: center;<br/>
+  border-bottom: 1px solid #333;<br/>
+  position: relative;<br/>
+}<br/>
+.logo[_ngcontent-ng-c3962716645] {<br/>
+  position: absolute;<br/>
+  left: 50%;<br/>
+  transform: translateX(-50%);<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  margin: 0 auto;<br/>
+  text-align: center;<br/>
+}<br/>
+.logo[_ngcontent-ng-c3962716645]   img[_ngcontent-ng-c3962716645] {<br/>
+  height: 40px;<br/>
+}<br/>
+.material-symbols-outlined[_ngcontent-ng-c3962716645] {<br/>
+  cursor: pointer;<br/>
+  font-variation-settings: "FILL" 1;<br/>
+  font-size: 40px;<br/>
+  color: #000000;<br/>
+  display: inline-block;<br/>
+  vertical-align: middle;<br/>
+  position: relative;<br/>
+  top: -5px;<br/>
+}<br/>
+.buscador[_ngcontent-ng-c3962716645] {<br/>
+  position: relative;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: flex-end;<br/>
+}<br/>
+@media (max-width: 768px) {<br/>
+  .buscador[_ngcontent-ng-c3962716645] {<br/>
+    justify-content: center;<br/>
+    width: 100%;<br/>
+    margin-top: 40px;<br/>
+  }<br/>
+  .buscador[_ngcontent-ng-c3962716645]   input[_ngcontent-ng-c3962716645] {<br/>
+    max-width: 250px;<br/>
+  }<br/>
+}<br/>
+/*# sourceMappingURL=/header.component.css.map */&lt;/style&gt;<br/>
+  &lt;style&gt;<br/>
+<br/>
+.search-input-wrapper[_ngcontent-ng-c4126703917] {<br/>
+  position: relative;<br/>
+  width: 100%;<br/>
+}<br/>
+.search-input[_ngcontent-ng-c4126703917] {<br/>
+  height: 35px;<br/>
+  width: 100%;<br/>
+  padding: 15px 50px 15px 20px;<br/>
+  border: 2px solid #e0e0e0;<br/>
+  border-radius: 30px;<br/>
+  font-size: 16px;<br/>
+  outline: none;<br/>
+  transition: all 0.3s ease;<br/>
+}<br/>
+.search-input[_ngcontent-ng-c4126703917]:focus {<br/>
+  border-color: #4285f4;<br/>
+  box-shadow: 0 0 8px rgba(66, 133, 244, 0.3);<br/>
+}<br/>
+.search-input[_ngcontent-ng-c4126703917]:focus    + .search-results[_ngcontent-ng-c4126703917] {<br/>
+  display: block;<br/>
+}<br/>
+.search-icon[_ngcontent-ng-c4126703917] {<br/>
+  position: absolute;<br/>
+  right: 20px;<br/>
+  top: 50%;<br/>
+  transform: translateY(-50%);<br/>
+  color: #757575;<br/>
+  cursor: pointer;<br/>
+  transition: all 0.3s ease;<br/>
+}<br/>
+.search-icon[_ngcontent-ng-c4126703917]:hover {<br/>
+  color: #4285f4;<br/>
+}<br/>
+.search-results[_ngcontent-ng-c4126703917] {<br/>
+  position: absolute;<br/>
+  top: 100%;<br/>
+  left: 0;<br/>
+  width: 100%;<br/>
+  margin-top: 5px;<br/>
+  background-color: white;<br/>
+  border-radius: 8px;<br/>
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);<br/>
+  padding: 15px;<br/>
+  max-height: 300px;<br/>
+  overflow-y: auto;<br/>
+  z-index: 10;<br/>
+  border: 1px solid #e0e0e0;<br/>
+}<br/>
+.search-results[_ngcontent-ng-c4126703917]   p[_ngcontent-ng-c4126703917] {<br/>
+  color: #555;<br/>
+  font-size: 14px;<br/>
+  margin-bottom: 10px;<br/>
+}<br/>
+.search-results[_ngcontent-ng-c4126703917]   .result-item[_ngcontent-ng-c4126703917] {<br/>
+  padding: 10px;<br/>
+  border-radius: 4px;<br/>
+  cursor: pointer;<br/>
+  transition: background-color 0.2s;<br/>
+}<br/>
+.search-results[_ngcontent-ng-c4126703917]   .result-item[_ngcontent-ng-c4126703917]:hover {<br/>
+  background-color: #f5f5f5;<br/>
+}<br/>
+/*# sourceMappingURL=/buscador.component.css.map */&lt;/style&gt;<br/>
+  &lt;style&gt;<br/>
+<br/>
+.tarjetas-contenedor[_ngcontent-ng-c3723999408] {<br/>
+  display: flex;<br/>
+  flex-wrap: wrap;<br/>
+  justify-content: center;<br/>
+  column-gap: 30px;<br/>
+  row-gap: 50px;<br/>
+}<br/>
+.tarjeta-container[_ngcontent-ng-c3723999408] {<br/>
+  width: 100%;<br/>
+  max-width: 150px;<br/>
+  cursor: pointer;<br/>
+}<br/>
+.tarjeta[_ngcontent-ng-c3723999408] {<br/>
+  min-height: 200px;<br/>
+  border-radius: 10px;<br/>
+  margin-bottom: 10px;<br/>
+  display: flex;<br/>
+  justify-content: center;<br/>
+  align-items: center;<br/>
+  color: white;<br/>
+  font-size: 20px;<br/>
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);<br/>
+  transition: transform 0.2s ease-in-out;<br/>
+}<br/>
+.tarjeta[_ngcontent-ng-c3723999408]:hover {<br/>
+  transform: translateY(-5px);<br/>
+}<br/>
+.tarjeta[_ngcontent-ng-c3723999408]::before {<br/>
+  position: absolute;<br/>
+  top: 10px;<br/>
+  right: 10px;<br/>
+  font-size: 24px;<br/>
+  color: white;<br/>
+}<br/>
+.tarjeta-morada[_ngcontent-ng-c3723999408] {<br/>
+  background-color: #400764;<br/>
+}<br/>
+.tarjeta-morada[_ngcontent-ng-c3723999408]   svg[_ngcontent-ng-c3723999408] {<br/>
+  width: 60px;<br/>
+  height: 60px;<br/>
+  fill: white;<br/>
+  display: block;<br/>
+  margin: 0 auto;<br/>
+}<br/>
+.tarjeta-rosada[_ngcontent-ng-c3723999408] {<br/>
+  background-color: #da1e73;<br/>
+}<br/>
+.tarjeta-rosada[_ngcontent-ng-c3723999408]   svg[_ngcontent-ng-c3723999408] {<br/>
+  width: 60px;<br/>
+  height: 60px;<br/>
+  fill: white;<br/>
+  display: block;<br/>
+  margin: 0 auto;<br/>
+}<br/>
+.tarjeta-azul[_ngcontent-ng-c3723999408] {<br/>
+  background-color: #00b5e2;<br/>
+}<br/>
+.tarjeta-azul[_ngcontent-ng-c3723999408]   svg[_ngcontent-ng-c3723999408] {<br/>
+  width: 60px;<br/>
+  height: 60px;<br/>
+  fill: white;<br/>
+  display: block;<br/>
+  margin: 0 auto;<br/>
+}<br/>
+.tarjeta-nombre[_ngcontent-ng-c3723999408] {<br/>
+  font-family: "Poppins", sans-serif;<br/>
+  font-size: 12px;<br/>
+  font-weight: 600;<br/>
+  color: #000000;<br/>
+  margin-top: 5px;<br/>
+  text-align: center;<br/>
+  letter-spacing: 0.5px;<br/>
+  text-transform: none;<br/>
+  line-height: 1.2;<br/>
+}<br/>
+/*# sourceMappingURL=/home.component.css.map */&lt;/style&gt;<br/>
+  &lt;style&gt;<br/>
+<br/>
+div[_ngcontent-ng-c2112741213] {<br/>
+  display: flex;<br/>
+  flex-direction: row;<br/>
+  flex-wrap: nowrap;<br/>
+  width: 100%;<br/>
+  align-items: center;<br/>
+  column-gap: 15px;<br/>
+  font-size: 16px;<br/>
+}<br/>
+div[_ngcontent-ng-c2112741213]   hr[_ngcontent-ng-c2112741213] {<br/>
+  border: 1px solid #000;<br/>
+  width: 20px;<br/>
+}<br/>
+div[_ngcontent-ng-c2112741213]   h2[_ngcontent-ng-c2112741213] {<br/>
+  font-weight: bold;<br/>
+  text-align: left;<br/>
+}<br/>
+/*# sourceMappingURL=/title-page.component.css.map */&lt;/style&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body&gt;&lt;app-root ng-version="19.2.2"&gt;<br/>
+   &lt;router-outlet&gt;&lt;/router-outlet&gt;<br/>
+   &lt;app-home-layout&gt;<br/>
+    &lt;app-header _nghost-ng-c3962716645="" ng-reflect-is-header="true"&gt;<br/>
+     &lt;header _ngcontent-ng-c3962716645="" style="border-bottom: 1px solid rgb(51, 51, 51); display: block; position: relative; bottom: 0px;"&gt;<br/>
+      &lt;div _ngcontent-ng-c3962716645="" class="logo"&gt;<br/>
+       &lt;img _ngcontent-ng-c3962716645="" src="logo_2.png" alt="Imagen logo"&gt;<br/>
+      &lt;/div&gt;&lt;!--container--&gt;&lt;!--container--&gt;<br/>
+      &lt;div _ngcontent-ng-c3962716645="" class="buscador"&gt;<br/>
+       &lt;app-buscador _ngcontent-ng-c3962716645="" _nghost-ng-c4126703917="" ng-reflect-placeholder="Buscar postulación"&gt;<br/>
+        &lt;div _ngcontent-ng-c4126703917="" class="search-input-wrapper"&gt;<br/>
+         &lt;input _ngcontent-ng-c4126703917="" type="text" class="search-input" placeholder="Buscar postulación"&gt;&lt;span _ngcontent-ng-c4126703917="" class="material-symbols-outlined search-icon"&gt;search&lt;/span&gt;&lt;!--bindings={<br/>
+  "ng-reflect-ng-if": "false"<br/>
+}--&gt;&lt;!--bindings={<br/>
+  "ng-reflect-ng-if": "false"<br/>
+}--&gt;&lt;!--bindings={<br/>
+  "ng-reflect-ng-if": "false"<br/>
+}--&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/app-buscador&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/header&gt;<br/>
+    &lt;/app-header&gt;<br/>
+    &lt;router-outlet&gt;&lt;/router-outlet&gt;<br/>
+    &lt;app-home _nghost-ng-c3723999408=""&gt;<br/>
+     &lt;app-title-page _ngcontent-ng-c3723999408="" _nghost-ng-c2112741213="" ng-reflect-title="Encuentra al talento ideal, ah" ng-reflect-title-style="font-size:20px; margin-top:70p"&gt;<br/>
+      &lt;div _ngcontent-ng-c2112741213="" class="title-page" style="font-size: 20px; margin-bottom: 70px; margin-top: 70px;"&gt;<br/>
+       &lt;hr _ngcontent-ng-c2112741213=""&gt;<br/>
+       &lt;h2 _ngcontent-ng-c2112741213=""&gt;Encuentra al talento ideal, ahora.&lt;/h2&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/app-title-page&gt;<br/>
+     &lt;div _ngcontent-ng-c3723999408="" class="tarjetas-contenedor"&gt;<br/>
+      &lt;div _ngcontent-ng-c3723999408="" class="tarjeta-container" tabindex="0" ng-reflect-router-link="/candidatos"&gt;<br/>
+       &lt;div _ngcontent-ng-c3723999408="" class="tarjeta tarjeta-morada"&gt;<br/>
+        &lt;svg _ngcontent-ng-c3723999408="" xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960" width="24px" fill="#1f1f1f"&gt;<br/>
+         &lt;path _ngcontent-ng-c3723999408="" d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113ZM120-240h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0 320Zm0-400Z"&gt;&lt;/path&gt;<br/>
+        &lt;/svg&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c3723999408="" class="tarjeta-nombre"&gt;<br/>
+        CANDIDATOS<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div _ngcontent-ng-c3723999408="" class="tarjeta-container" tabindex="0" ng-reflect-router-link="/postulacion"&gt;<br/>
+       &lt;div _ngcontent-ng-c3723999408="" class="tarjeta tarjeta-rosada"&gt;<br/>
+        &lt;svg _ngcontent-ng-c3723999408="" xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960" width="24px" fill="#1f1f1f"&gt;<br/>
+         &lt;path _ngcontent-ng-c3723999408="" d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"&gt;&lt;/path&gt;<br/>
+        &lt;/svg&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c3723999408="" class="tarjeta-nombre"&gt;<br/>
+        POSTULACIONES<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div _ngcontent-ng-c3723999408="" class="tarjeta-container" tabindex="0" ng-reflect-router-link="/configuracion"&gt;<br/>
+       &lt;div _ngcontent-ng-c3723999408="" class="tarjeta tarjeta-azul"&gt;<br/>
+        &lt;svg _ngcontent-ng-c3723999408="" xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960" width="24px" fill="#989898"&gt;<br/>
+         &lt;path _ngcontent-ng-c3723999408="" d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"&gt;&lt;/path&gt;<br/>
+        &lt;/svg&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c3723999408="" class="tarjeta-nombre"&gt;<br/>
+        AJUSTES<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/app-home&gt;&lt;!--container--&gt;<br/>
+   &lt;/app-home-layout&gt;&lt;!--container--&gt;<br/>
+  &lt;/app-root&gt;<br/>
+  &lt;script src="polyfills.js" type="module"&gt;&lt;/script&gt;<br/>
+  &lt;script src="main.js" type="module"&gt;&lt;/script&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
