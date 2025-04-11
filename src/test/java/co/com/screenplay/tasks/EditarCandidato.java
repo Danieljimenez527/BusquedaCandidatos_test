@@ -24,6 +24,20 @@ public class EditarCandidato {
         );
     }
 
+    public static Task cambiarNombre(String nombre) {
+        return Task.where("{0} cambia el nombre del candidato a " + nombre,
+                Clear.field(UserInterface.NOMBRE_INPUT),
+                Enter.theValue(nombre).into(UserInterface.NOMBRE_INPUT)
+        );
+    }
+
+    public static Task cambiarApellido(String apellido) {
+        return Task.where("{0} cambia el apellido del candidato a " + apellido,
+                Clear.field(UserInterface.APELLIDO_INPUT),
+                Enter.theValue(apellido).into(UserInterface.APELLIDO_INPUT)
+        );
+    }
+
     public static Task hacerScrollHacia(Target objetivo) {
         return Task.where("{0} hace scroll hacia el elemento objetivo",
                 Scroll.to(objetivo)

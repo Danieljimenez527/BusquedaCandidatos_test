@@ -35,7 +35,7 @@ public class BuscarCandidatoStepDefinitions {
         actor.attemptsTo(BuscarCandidato.conNombre(nombre));
     }
 
-    @Entonces("debería ver al candidato {string} en la lista")
+    @Entonces("debería ver al candidato {string}")
     public void verificarQueElCandidatoEsteEnLaLista(String nombreEsperado) {
         actor.attemptsTo(
                 Ensure.that(CandidatosPage.NOMBRE_CANDIDATO(nombreEsperado)).isDisplayed()
